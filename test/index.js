@@ -49,5 +49,18 @@ describe('Promise Concurrency', () => {
             .then(results => done(results))
             .catch(err => done());
     });
-
+    it('should return the values with the same order in one second', done => {
+        const promises = [];
+        for (let i=0; i<10; i++){
+            promises.push(() => promiseWithValue(i));
+        }
+        Concurrency.all(promises, 10)
+            .then(results => {
+                results.forEach((value, index) => {
+                    expect(value).toBe(index);
+                });
+                done();
+            })
+            .catch(err => done(err));
+    });
 });
