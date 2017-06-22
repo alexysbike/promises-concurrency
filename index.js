@@ -17,7 +17,7 @@ const all = async (promises, concurrency = 3) => {
     return Promise.all(workers).then(responses => {
         const results = [];
         responses.forEach(result => {
-            extend(result).forEach((value, key) => {
+            extend(result, false, false).forEach((value, key) => {
                 results[key] = value;
             });
         });
