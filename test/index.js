@@ -4,17 +4,17 @@ describe('Promise Concurrency', () => {
     const simplePromise = () => new Promise((resolve, reject) => {
         setTimeout(function(){
             resolve("¡Success!");
-        }, 250);
+        }, 1000);
     });
     const promiseWithValue = value => new Promise((resolve, reject) => {
         setTimeout(function(){
             resolve(value);
-        }, 250);
+        }, 1000);
     });
     const rejectedPromise = () => new Promise((resolve, reject) => {
         setTimeout(function(){
-            resolve("¡Reject!");
-        }, 250);
+            reject("¡Reject!");
+        }, 1000);
     });
     it('should resolve max 3 promises at time', done => {
         const promises = [];
