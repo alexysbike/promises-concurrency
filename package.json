@@ -1,6 +1,6 @@
 {
   "name": "promises-concurrency",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Promise.all like function with concurrency",
   "main": "index.js",
   "scripts": {
