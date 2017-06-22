@@ -1,0 +1,28 @@
+{
+  "name": "promises-concurrency",
+  "version": "1.0.0",
+  "description": "A Promise.all like function with concurrency",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexysbike/promises-concurrency.git"
+  },
+  "keywords": [
+    "promise",
+    "promises",
+    "concurrency",
+    "pool"
+  ],
+  "author": "Alexys Gonzalez (DK)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexysbike/promises-concurrency/issues"
+  },
+  "homepage": "https://github.com/alexysbike/promises-concurrency#readme",
+  "devDependencies": {
+    "expect": "^1.20.2"
+  }
+}
