@@ -1,3 +1,4 @@
+// Alexys Gonzalez (DK)
 const extend = require('extended-object');
 const worker = pool => async () => {
     let item;
